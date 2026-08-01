@@ -1,7 +1,28 @@
 aid: shezlong
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/shezlong.png
 name: Shezlong
-description: Shezlong is a company surfaced as a portfolio company of 500-global and added to the API
-  Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: >-
+  Shezlong is an online mental health and therapy platform serving Egypt and the
+  wider MENA region, connecting users with licensed psychologists and therapists
+  through confidential video, voice, and text sessions delivered from any device.
+  Founded in 2015 and Arabic-first, the consumer service offers subscription-based
+  access to counseling, self-assessment tools, and educational content. It was
+  surfaced as a portfolio company of 500 Global and added to the API Evangelist
+  network. As of this enrichment pass Shezlong operates a client-side (Angular)
+  web application behind Cloudflare and publishes no public developer API, OpenAPI
+  definition, SDK, or /.well-known discovery surface; the profile is maintained as
+  a lead for discovery and future enrichment.
 url: https://raw.githubusercontent.com/api-evangelist/shezlong/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,9 +32,15 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-21'
 tags:
 - Company
+- Health
+- Healthcare
+- Mental Health
+- Telehealth
+- Therapy
+- MENA
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -23,3 +50,10 @@ maintainers:
 common:
 - type: Website
   url: https://shezlong.com
+- type: DomainSecurity
+  url: security/shezlong-domain-security.yml
+x-enrichment:
+  date: '2026-07-21'
+  status: minimal
+  artifacts_added: 1
+  pass: local-v1
